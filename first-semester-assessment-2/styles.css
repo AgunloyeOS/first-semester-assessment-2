@@ -1,0 +1,888 @@
+
+/* =====================================
+   1. GENERAL STYLING
+===================================== */
+
+/* Import DM Sans font */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');
+
+
+/* Reset browser default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: #141414;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+button,
+input {
+    font: inherit;
+}
+
+
+/* =====================================
+   2. REUSABLE STYLES
+===================================== */
+
+.primary-button {
+    display: inline-block;
+    background-color: #0065fe;
+    color: #ffffff;
+    padding: 11px 25px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.primary-button:hover {
+    background-color: #004fca;
+}
+
+
+.outline-button {
+    display: inline-block;
+    padding: 11px 25px;
+    border: 1px solid #0065fe;
+    color: #0065fe;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.hero span,
+.analytics-heading span,
+.features-heading span,
+.section-heading span {
+    color: #0065fe;
+}
+
+
+/* =====================================
+   3. NAVIGATION BAR
+===================================== */
+
+header {
+    background-color: #ffffff;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+}
+
+
+.logo {
+    color: #0065fe;
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: -0.8px;
+}
+
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+.nav-links a {
+    transition: color 0.3s ease;
+}
+
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #0065fe;
+}
+
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 14px;
+}
+
+
+.login {
+    color: #0065fe;
+    font-weight: 600;
+}
+
+
+/* =====================================
+   4. HERO SECTION
+===================================== */
+
+.hero {
+    text-align: center;
+    padding: 75px 20px 65px;
+    background: linear-gradient(to bottom, #ffffff, #f9fbff);
+}
+
+
+.hero h1 {
+    font-size: clamp(27px, 3.2vw, 42px);
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: -1.5px;
+    margin-bottom: 20px;
+}
+
+
+.hero p {
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #555555;
+}
+
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+
+.learn-more {
+    color: #0065fe;
+    font-weight: 600;
+}
+
+
+/* URL ILLUSTRATION */
+
+.url-illustration {
+    max-width: 550px;
+    margin: 45px auto 0;
+    padding: 25px;
+    border: 1px solid #c4dcff;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 20px rgba(0, 101, 254, 0.06);
+}
+
+
+.url-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 15px;
+    font-size: 23px;
+}
+
+
+.url-illustration p {
+    font-size: 12px;
+}
+
+
+/* =====================================
+   5. ANALYTICS SECTION
+===================================== */
+
+.analytics {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 45px 8%;
+    background-color: #f9fbff;
+}
+
+
+.analytics-heading {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+
+.stat h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    line-height: 1.2;
+}
+
+
+.stat p {
+    font-size: 12px;
+    color: #555555;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+/* =====================================
+   6. FEATURES SECTION
+===================================== */
+
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 60px;
+    padding: 100px 8%;
+}
+
+
+.features-heading h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+
+
+.features-heading p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #555555;
+}
+
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+
+.feature-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8f1ff;
+    color: #0065fe;
+    border-radius: 50%;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+
+.feature h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+
+.feature p {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #555555;
+}
+
+
+/* =====================================
+   7. PRICING SECTION
+===================================== */
+
+.pricing {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+
+.section-heading h2 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.8px;
+    margin-bottom: 15px;
+}
+
+
+.section-heading p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #555555;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px auto 40px;
+    max-width: 950px;
+}
+
+
+.price-card {
+    flex: 1;
+    padding: 40px 25px;
+    border: 1px solid #0065fe;
+    text-align: left;
+    min-height: 390px;
+    background-color: #ffffff;
+}
+
+
+.price-card:first-child {
+    border-radius: 12px 0 0 12px;
+}
+
+
+.price-card:last-child {
+    border-radius: 0 12px 12px 0;
+}
+
+
+.price-card.professional {
+    background-color: #1e3448;
+    color: #ffffff;
+    border-radius: 12px;
+    transform: scale(1.08);
+    padding-top: 55px;
+    padding-bottom: 55px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.plan-name {
+    font-size: 14px;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+
+.price-card h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+
+.price-card h2 span {
+    color: inherit;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.price-card > p:nth-of-type(2) {
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+
+.price-card ul {
+    list-style: none;
+}
+
+
+.price-card li {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+
+.price-card li::before {
+    content: "✓";
+    color: #0065fe;
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+
+.professional li::before {
+    color: #ffffff;
+}
+
+
+.pricing-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/* =====================================
+   8. PRODUCT SECTION
+===================================== */
+
+.product-section {
+    background-color: #1e3448;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    background-image:
+        radial-gradient(ellipse at 10% 100%, #254f6c, transparent 45%),
+        radial-gradient(ellipse at 90% 0%, #254f6c, transparent 45%);
+}
+
+
+.product-form {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+
+.product-form h2 {
+    color: #0065fe;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+.product-form input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #c4dcff;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    outline: none;
+    font-size: 13px;
+}
+
+
+.product-form input:focus {
+    border-color: #0065fe;
+}
+
+
+.product-inputs {
+    display: flex;
+    gap: 10px;
+}
+
+
+.product-form button {
+    width: 100%;
+}
+
+
+.product-form > p {
+    font-size: 10px;
+    color: #555555;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+
+/* =====================================
+   9. FAQ SECTION
+===================================== */
+
+.faq-section {
+    padding: 80px 15%;
+    background-color: #ffffff;
+}
+
+
+.faq-section h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+
+.faq-list details {
+    padding: 22px 0;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+
+.faq-list summary {
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.faq-list summary::-webkit-details-marker {
+    display: none;
+}
+
+
+.faq-list summary::after {
+    content: "+";
+    color: #0065fe;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.faq-list details[open] summary::after {
+    content: "−";
+}
+
+
+.faq-list details p {
+    margin-top: 20px;
+    font-size: 13px;
+    line-height: 1.8;
+    color: #555555;
+}
+
+
+/* =====================================
+   10. CALL TO ACTION
+===================================== */
+
+.cta {
+    text-align: center;
+    background-color: #1e3448;
+    color: #ffffff;
+    padding: 70px 20px;
+}
+
+
+.cta h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+
+/* =====================================
+   11. FOOTER
+===================================== */
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+    padding: 70px 8% 30px;
+    background-color: #ffffff;
+}
+
+
+.footer-logo .logo {
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+
+/* SOCIAL MEDIA ICONS */
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+
+.social-links a {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #141414;
+    transition: color 0.3s ease;
+}
+
+
+.social-links a:hover {
+    color: #0065fe;
+}
+
+
+.social-links svg {
+    width: 19px;
+    height: 19px;
+    fill: currentColor;
+}
+
+
+/* Instagram needs outlined shapes */
+
+.social-links a:nth-child(2) svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+}
+
+
+.social-links a:nth-child(2) .instagram-dot {
+    fill: currentColor;
+    stroke: none;
+}
+
+
+/* FOOTER CATEGORIES */
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px 25px;
+}
+
+
+.footer-links h3 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+
+.footer-links a {
+    display: block;
+    font-size: 12px;
+    color: #555555;
+    margin-bottom: 12px;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+}
+
+
+.footer-links a:hover {
+    color: #0065fe;
+}
+
+
+/* COPYRIGHT */
+
+.copyright {
+    grid-column: 1 / -1;
+    text-align: right;
+    font-size: 11px;
+    margin-top: 25px;
+    color: #555555;
+    line-height: 1.8;
+}
+
+
+/* =====================================
+   12. RESPONSIVE DESIGN - TABLETS
+===================================== */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+
+    .nav-buttons {
+        gap: 12px;
+    }
+
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+
+    .analytics {
+        justify-content: center;
+    }
+
+
+    .analytics-heading {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .stat {
+        width: 40%;
+        text-align: center;
+    }
+
+
+    .features {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+
+    .pricing-cards {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+
+    .price-card {
+        width: 100%;
+        border-radius: 12px !important;
+    }
+
+
+    .price-card.professional {
+        transform: none;
+    }
+
+
+    .faq-section {
+        padding: 60px 8%;
+    }
+
+
+    footer {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .copyright {
+        text-align: center;
+    }
+
+}
+
+
+/* =====================================
+   13. RESPONSIVE DESIGN - MOBILE
+===================================== */
+
+@media (max-width: 480px) {
+
+    .navbar {
+        padding: 20px 5%;
+    }
+
+
+    .nav-buttons {
+        font-size: 12px;
+    }
+
+
+    .nav-links {
+        font-size: 12px;
+    }
+
+
+    .hero {
+        padding-top: 55px;
+    }
+
+
+    .hero h1 {
+        font-size: 23px;
+        letter-spacing: -0.7px;
+    }
+
+
+    .hero p {
+        font-size: 13px;
+    }
+
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .features-heading h2 {
+        font-size: 26px;
+    }
+
+
+    .faq-section {
+        padding: 50px 6%;
+    }
+
+
+    .product-inputs {
+        flex-direction: column;
+        gap: 0;
+    }
+
+
+    .pricing-buttons {
+        flex-direction: column;
+    }
+
+
+    .section-heading h2 {
+        font-size: 26px;
+    }
+
+
+    .footer-links {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 15px;
+    }
+
+
+    .cta h2 {
+        font-size: 23px;
+    }
+
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-links a {
+    font-size: 20px;
+    color: #141414;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0065fe;
+}
