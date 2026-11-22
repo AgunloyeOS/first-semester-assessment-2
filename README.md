@@ -1,9 +1,18 @@
-# AltSchool AI-Powered Full-Stack Engineering
+# Scissor - URL Shortening Platform
 
-My learning and development repository for the AltSchool Africa
-AI-Powered Full-Stack Engineering program.
+A responsive landing page for Scissor, a URL shortening platform.
 
-## Progress
+## Built With
 
-This repository will contain my coursework, exercises, assignments,
-and projects as I progress through the program.
+- HTML5
+- CSS3
+
+## Project Overview
+
+This project is part of my AltSchool Africa AI-Powered Full-Stack Engineering assessment.
+
+It demonstrates my understanding of HTML structure, CSS styling, Flexbox, CSS Grid, and responsive web design.
+
+## Live Website
+
+Coming soon!
