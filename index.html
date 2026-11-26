@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scissors - URL Shortening</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
 </head>
 
 <body id="top">
@@ -15,11 +14,24 @@
     <header>
         <nav class="navbar">
 
-            <a href="#top" class="logo">✂ | SCISSOR</a>
+            <a class="scissor-logo" href="#top">
+                <img src="../assets/images/vector.svg" alt="">
+                <img src="../assets/images/lgo line.svg" alt="">
+                <span>SCISSOR</span>
+            </a>
 
             <div class="nav-links">
                 <a href="#product" class="active">My URLs</a>
-                <a href="#features">Features</a>
+                <details class="nav-features">
+                    <summary>Features</summary>
+
+                    <div class="nav-features-menu">
+                        <span>All features</span>
+                        <a href="#url-shortening">URL Shortening</a>
+                        <a href="#qr-codes">QR Codes</a>
+                        <a href="#analytics">Analytics</a>
+                    </div>
+                </details>
                 <a href="#pricing">Pricing</a>
                 <a href="#analytics">Analytics</a>
                 <a href="#faqs">FAQs</a>
@@ -46,9 +58,9 @@
             </h1>
 
             <p>
-                Personalize your shortened URLs to align with your brand identity.
-                Utilize our advanced features to track, manage and optimize
-                your links.
+                Personalize your shortened URLs to align with your brand identity. Utilize custom slugs,
+                branded links, and domain customization options to reinforce your brand presence and enhance
+                user engagement.
             </p>
 
             <div class="hero-buttons">
@@ -59,17 +71,17 @@
             <div class="url-illustration">
 
                 <div class="url-icons">
-                    <span>🔗</span>
-                    <span>🔗</span>
-                    <span>🔗</span>
-                    <span>→</span>
-                    <span>🔗</span>
+                    <img src="../assets/images/link-2 (1).svg" alt="image"/>
+                    <img src="../assets/images/link-2 (1).svg" alt="image"/>
+                    <img src="../assets/images/link-2 (1).svg" alt="image"/>
+                    <span><img src="../assets/images/line 7.svg" alt="image"/></span>
+                    <img src="../assets/images/link-2 (1).svg" alt="image"/>
                 </div>
 
                 <p>
-                    Seamlessly transform your long URLs into concise,
+                    Seamlessly transform your long URLs into <span>concise</span>
                     <br>
-                    and shareable links with just few clicks.
+                    and <span>shareable links</span> with just few clicks.
                 </p>
 
             </div>
@@ -86,32 +98,35 @@
                 Four <span>Possibilities.</span>
             </div>
 
-            <div class="stat">
-                <h2>3M</h2>
-                <p>Active Users</p>
-            </div>
+            <div class="stats-grid">
 
-            <div class="stat">
-                <h2>60M</h2>
-                <p>Links & QR
-                    <br>
-                    Codes Created
-                </p></div>
-            </div>
+                <div class="stat first-stat">
+                    <h2>3M</h2>
+                    <p>Active Users</p>
+                </div>
 
-            <div class="stat">
-                <h2>1B</h2>
-                <p>Clicked & Scanned
-                    <br>
-                    Connections
-                </p>
-            </div>
+                <div class="stat">
+                    <h2>60M</h2>
+                    <p>Links & QR
+                        <br>
+                        Codes Created
+                    </p>
+                </div>
 
-            <div class="stat">
-                <h2>300k</h2>
-                <p>App Integrations</p>
-            </div>
+                <div class="stat">
+                    <h2>1B</h2>
+                    <p>Clicked & Scanned
+                        <br>
+                        Connections
+                    </p>
+                </div>
 
+                <div class="stat">
+                    <h2>300k</h2>
+                    <p>App Integrations</p>
+                </div>
+
+            </div>
         </section>
 
 
@@ -123,12 +138,12 @@
                 <h2>Why choose <span>Scissors</span></h2>
 
                 <p>
-                    Scissors is the hub of everything that has to do 
-                    with your link management. We shorten your URLs, 
-                    allow you creating custom ones for your personal, 
-                    business, event usage. Our swift QR code 
-                    creation, management and usage tracking with 
-                    advance analytics for all of these is second to 
+                    Scissors is the hub of everything that has to do
+                    with your link management. We shorten your URLs,
+                    allow you creating custom ones for your personal,
+                    business, event usage. Our swift QR code
+                    creation, management and usage tracking with
+                    advance analytics for all of these is second to
                     none.
                 </p>
 
@@ -137,9 +152,9 @@
 
             <div class="features-grid">
 
-                <div class="feature">
+                <div class="feature" id="url-shortening">
 
-                    <div class="feature-icon">↗</div>
+                    <div class="feature-icon"><img src="../assets/images/link-no-shade.svg" alt=""/></div>
 
                     <h3>URL Shortening</h3>
 
@@ -153,7 +168,9 @@
 
                 <div class="feature">
 
-                    <div class="feature-icon">📝</div>
+                    <div class="feature-icon">
+                        <img src="../assets/images/edit_no_shades.svg" alt=""/>
+                    </div>
 
                     <h3>Custom URLs</h3>
 
@@ -166,9 +183,9 @@
                 </div>
 
 
-                <div class="feature">
+                <div class="feature" id="qr-codes">
 
-                    <div class="feature-icon">▦</div>
+                    <div class="feature-icon"><img src="../assets/images/grid_no_shades.svg" alt=""/></div>
 
                     <h3>QR Codes</h3>
 
@@ -183,7 +200,7 @@
 
                 <div class="feature">
 
-                    <div class="feature-icon">◷</div>
+                    <div class="feature-icon"><img src="../assets/images/activity_no_shades.svg" alt=""/></div>
 
                     <h3>Data Analytics</h3>
 
@@ -209,9 +226,9 @@
 
                 <p>
                     From catering for your personal, business, event,
-                    social needs,
+                    social needs, you can be
                     <br>
-                    you can be rest assured we have you
+                    rest assured we have you
                     in mind in our pricing.
                 </p>
 
@@ -303,7 +320,12 @@
                 <input type="text" placeholder="Enter your URL">
 
                 <div class="product-inputs">
-                    <input type="text" placeholder="Choose Domain">
+
+                    <select id="domain" name="domain" required>
+                        <option value="" selected disabled>Choose a domain</option>
+                        <option value="scissor.link">scissor.link</option>
+                        <option value="scissor.io">scissor.io</option>
+                    </select>
                     <input type="text" placeholder="Type Alias here">
                 </div>
 
@@ -311,7 +333,6 @@
 
                 <p>
                     By clicking Trim URL, I agree to the Terms of Service,
-                    <br>
                     Privacy Policy and Use of Cookies.
                 </p>
 
@@ -426,24 +447,30 @@
 
         <div class="footer-logo">
 
-            <a href="#top" class="logo">✂ | SCISSOR</a>
+            <a class="scissor-logo" href="#top">
+                <img src="../assets/images/vector.svg" alt="logo">
+                <img src="../assets/images/lgo line.svg" alt="">
+                <span>SCISSOR</span>
+            </a>
 
             <div class="social-links">
-                <a href="#" aria-label="X">
-                    <i class="fa-brands fa-x-twitter"></i>
+
+                <a href="https://x.com/agunloyeos" aria-label="Follow us on X">
+                    <img src="../assets/images/twitter-x.svg" alt="" width="20" height="20">
                 </a>
 
-                <a href="#" aria-label="Instagram">
-                     <i class="fa-brands fa-instagram"></i>
+                <a href="https://instagram.com/agunloyeos" aria-label="Follow us on Instagram">
+                    <img src="../assets/images/instagram.svg" alt="" width="20" height="20">
                 </a>
 
-                <a href="#" aria-label="LinkedIn">
-                     <i class="fa-brands fa-linkedin-in"></i>
+                <a href="https://linkedin.com/in/oluwatosinagunloye" aria-label="Follow us on LinkedIn">
+                    <img src="../assets/images/linkedin.svg" alt="" width="20" height="20">
                 </a>
 
-                <a href="#" aria-label="Facebook">
-                    <i class="fa-brands fa-facebook-f"></i>
+                <a href="https://facebook.com/agunloyeos" aria-label="Follow us on Facebook">
+                    <img src="../assets/images/facebook.svg" alt="" width="20" height="20">
                 </a>
+
             </div>
 
         </div>
@@ -530,4 +557,3 @@
 
 </body>
 </html>
-
